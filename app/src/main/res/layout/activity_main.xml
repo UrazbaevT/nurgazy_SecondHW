@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_photo"
-    tools:context=".MainActivity">
+    tools:context="com.example.secondhw.MainActivity">
 
     <TextView
         android:id="@+id/text1"
@@ -98,6 +98,7 @@
         android:inputType="textPassword"/>
 
 <com.google.android.material.button.MaterialButton
+    android:onClick="onClickOpen"
     android:id="@+id/button1"
     app:cornerRadius="10dp"
     android:backgroundTint="@color/gray"
@@ -110,7 +111,8 @@
     android:textColor="@color/white"
     app:layout_constraintTop_toBottomOf="@+id/edit2"
     app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintStart_toStartOf="parent">
+    app:layout_constraintStart_toStartOf="parent"
+    tools:ignore="OnClick">
 </com.google.android.material.button.MaterialButton>
 
     <TextView
